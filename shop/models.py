@@ -3,6 +3,9 @@ from django import forms
 
 
 class ProductExtraField(models.Model):
+    """
+    Экстра поле товара
+    """
     name = models.CharField(max_length=255,verbose_name="Наименование")
     value = models.TextField(verbose_name="Значение")
 
@@ -14,6 +17,9 @@ class ProductExtraField(models.Model):
 
 
 class ProductExtraFieldForm(forms.ModelForm):
+    """
+    Форма экстра поля
+    """
     class Meta:
         model = ProductExtraField
         fields = (

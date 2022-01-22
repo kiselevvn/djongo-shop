@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import Product, ProductTag, Сustomer
 
 
-admin.site.register([ProductTag,Сustomer])
+admin.site.register([ProductTag,])
 
 
 @admin.register(Product)
