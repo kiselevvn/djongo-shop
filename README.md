@@ -2,6 +2,16 @@
 
 Приложение демонстрирует один из возможных вариантов взаимодествия Django и MongoDB
 
+Впишите наименование базы данных MongoDB в поле NAME
+```
+DATABASES = {
+    'default': {
+        'ENGINE': 'djongo',
+        'NAME': 'test',
+    }
+}
+```
+
 Создание виртуального окружения
 ```
 python3 -m venv .venv
@@ -31,3 +41,5 @@ python .\manage.py createsuperuser
 ```
 python .\manage.py runserver
 ```
+
+
